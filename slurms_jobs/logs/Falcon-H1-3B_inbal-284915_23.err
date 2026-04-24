@@ -1,0 +1,38 @@
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:164: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/ops/selective_scan_interface.py:240: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout):
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:986: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/ops/triton/layer_norm.py:1045: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:26: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, x, weight, bias, process_group=None, sequence_parallel=True):
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/distributed/tensor_parallel.py:62: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:758: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/mamba_ssm/ops/triton/ssd_combined.py:836: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+Loading weights:   0%|          | 0/547 [00:00<?, ?it/s]Loading weights:   0%|          | 1/547 [00:00<01:27,  6.21it/s]Loading weights:   9%|▊         | 47/547 [00:00<00:02, 213.67it/s]Loading weights:  13%|█▎        | 73/547 [00:00<00:02, 231.04it/s]Loading weights:  20%|█▉        | 108/547 [00:00<00:01, 266.51it/s]Loading weights:  26%|██▌       | 140/547 [00:00<00:01, 284.19it/s]Loading weights:  31%|███       | 170/547 [00:00<00:01, 278.47it/s]Loading weights:  37%|███▋      | 200/547 [00:00<00:01, 274.09it/s]Loading weights:  43%|████▎     | 237/547 [00:00<00:01, 302.53it/s]Loading weights:  49%|████▉     | 268/547 [00:01<00:01, 272.34it/s]Loading weights:  55%|█████▌    | 302/547 [00:01<00:00, 277.23it/s]Loading weights:  61%|██████▏   | 336/547 [00:01<00:00, 294.28it/s]Loading weights:  69%|██████▉   | 378/547 [00:01<00:00, 323.98it/s]Loading weights:  75%|███████▌  | 411/547 [00:01<00:00, 318.71it/s]Loading weights:  81%|████████  | 444/547 [00:01<00:00, 298.22it/s]Loading weights:  87%|████████▋ | 475/547 [00:01<00:00, 299.00it/s]Loading weights:  93%|█████████▎| 506/547 [00:01<00:00, 277.91it/s]Loading weights:  98%|█████████▊| 535/547 [00:01<00:00, 280.41it/s]Loading weights: 100%|██████████| 547/547 [00:01<00:00, 280.12it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]
+Filtering lookbacks_first_counterfactual_boxes:   0%|          | 0/100 [00:00<?, ?it/s][AFiltering lookbacks_first_counterfactual_boxes:   0%|          | 0/100 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/falcon100/new/run_layer_experiments.py", line 346, in <module>
+    main()
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/falcon100/new/run_layer_experiments.py", line 317, in main
+    train_ds, _, _ = get_counterfactual_datasets(
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/falcon100/new/training.py", line 406, in get_counterfactual_datasets
+    fds1, failed_data1 = exp.filter(ds1, verbose=True, batch_size=batch_size)
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/falcon100/new/CausalAbstraction/experiments/filter_experiment.py", line 88, in filter
+    orig_valid, raw_outputs = self._validate_original_inputs(dataset, orig_inputs, b_i, batch_size)
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/falcon100/new/CausalAbstraction/experiments/filter_experiment.py", line 155, in _validate_original_inputs
+    orig_preds = self.pipeline.dump(self.pipeline.generate(orig_inputs))
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/falcon100/new/run_layer_experiments.py", line 295, in generate
+    enc = self.tokenizer(prompt, return_tensors="pt").to(self._device)
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2498, in __call__
+    encodings = self._encode_plus(
+  File "/vol/joberant_nobck/data/NLP_368307701_2526a/inbalmoryles/envs/falcon-env/lib/python3.10/site-packages/transformers/tokenization_utils_tokenizers.py", line 902, in _encode_plus
+    raise ValueError(
+ValueError: text input must be of type `str` (single example), `list[str]` (batch or single pretokenized example) or `list[list[str]]` (batch of pretokenized examples) or `list[tuple[list[str], list[str]]]` (batch of pretokenized sequence pairs).
